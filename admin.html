@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+
+<div class="container mt-3" style="background-color: rgb(237, 240, 233); text-align: center;">
+
+    <h2>User Apply List</h2>
+    <a href="/post_page" class="btn btn-secondary mt-4 ">
+        <button>Back to Jobs</button>
+    </a>
+
+
+    {% for app in apps %}
+
+    <p>Job ID: {{ app.job_id }}</p>
+    <p>User ID: {{ app.user_id }}</p>
+    <p>Applicant Name: {{ app.your_name }}</p>
+    <p>Phone Number: {{ app.phone_number }}</p>
+    <p>Email: {{ app.email }}</p>
+    <p>Address: {{ app.address }}</p>
+    <p>Location: {{ app.location }}</p>
+    <p>Resume: {{ app.resume }}</p>
+
+    <hr>
+
+    {% endfor %}
+
+
+
+</div>

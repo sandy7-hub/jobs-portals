@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+<div class="container mt-5" style="background-color: rgb(243, 247, 229); text-align: center;">
+
+    <h3>Apply for Job</h3>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <input type="text" name="your_name" class="form-control mb-2" placeholder="Your Name" required>
+        <input type="number" name="phone_number" class="form-control mb-2" placeholder="Phone Number" required>
+        <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
+        <input type="text" name="address" class="form-control mb-2" placeholder="Address" required>
+        <input type="text" name="location" class="form-control mb-2" placeholder="Location" required>
+        <input type="file" name="resume" required><br><br>
+        <button type="submit" class="btn btn-primary mb-3">Upload & Apply</button>
+        
+    </form>
+</div>
